@@ -51,7 +51,6 @@ public class Main {
         valorTotal=valorCuenta+valorPropina;
         teclado.close();
         String propinaFormat =String.format("%.2f", valorPropina);
-        String valorTotalFormat = String.format("%.2f", valorTotal);
         
         System.out.println("------------FACTURA-------------------");
         System.out.println("Valor de la cuenta sin propina --->"+ valorCuenta);
