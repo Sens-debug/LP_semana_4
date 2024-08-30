@@ -50,12 +50,15 @@ public class Main {
         valorPropina = (valorCuenta*porcentajePropina)/100;
         valorTotal=valorCuenta+valorPropina;
         teclado.close();
+        String propinaFormat =String.format("%.2f", valorPropina);
+        String valorTotalFormat = String.format("%.2f", valorTotal);
         
         System.out.println("------------FACTURA-------------------");
         System.out.println("Valor de la cuenta sin propina --->"+ valorCuenta);
         System.out.println("Seleccionaste una propina del --->"+porcentajePropina+ "%");
-        System.out.println("El valor de la propina es --->"+valorPropina);
+        System.out.println("El valor de la propina es --->"+propinaFormat);
         System.out.println("El valor total a pagar es --->"+valorTotal);
+       
     }
 
 }
